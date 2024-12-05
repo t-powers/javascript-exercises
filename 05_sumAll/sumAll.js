@@ -5,7 +5,7 @@ const sumAll = function (a, b) {
     return "ERROR";
   } else if (typeof a !== "number" || typeof b !== "number") {
     return "ERROR";
-  } else if (a > b){
+  } else if (a > b) {
     [a, b] = [b, a];
   }
   for (let i = a; i <= b; i++) {
