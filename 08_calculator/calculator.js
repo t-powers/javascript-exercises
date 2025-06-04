@@ -18,8 +18,9 @@ const multiply = function (arr) {
 };
 
 const power = function (a, b) {
-    return a ** b;
+    console.log(a ** b);
 };
+power(2, 2)
 
 const factorial = function (n) {
     if (n === 0 || n === 1) {
