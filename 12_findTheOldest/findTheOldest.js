@@ -16,16 +16,12 @@ const people = [
     },
 ]
 
-const findTheOldest = function (array) {
-    const mapNewBirthArray = people.map(person => {
-        return ({[person.name]: person.yearOfBirth})
-    })
-    const mapNewDeathArray = people.map(person => {
-        return ({[person.name]: person.yearOfDeath})
+const findTheOldest = function () {
+    const mapNewArray = people.map(person => {
+        console.log(person.yearOfDeath - person.yearOfBirth)
     })
 
-    console.log(mapNewBirthArray)
-    console.log(mapNewDeathArray)
+
 };
 findTheOldest(people);
 
