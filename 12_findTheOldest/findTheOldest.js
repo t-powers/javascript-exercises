@@ -17,11 +17,17 @@ const people = [
 ]
 
 const findTheOldest = function (array) {
-    console.log(array);
+    const mapNewBirthArray = people.map(person => {
+        return ({[person.name]: person.yearOfBirth})
+    })
+    const mapNewDeathArray = people.map(person => {
+        return ({[person.name]: person.yearOfDeath})
+    })
+
+    console.log(mapNewBirthArray)
+    console.log(mapNewDeathArray)
 };
-
-findTheOldest(people)
-
+findTheOldest(people);
 
 //Plan & Pseudocode
 //Problem: Given an array of objects representing people with a birth and death year, return the oldest person.
