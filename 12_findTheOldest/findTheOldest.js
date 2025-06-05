@@ -18,8 +18,11 @@ const people = [
 
 const findTheOldest = function () {
     const mapNewArray = people.map(person => {
-        console.log(person.yearOfDeath - person.yearOfBirth)
+        return {name: person.name, ageOfPerson: person.yearOfDeath - person.yearOfBirth};
     })
+        .sort((a, b) => b.ageOfPerson - a.ageOfPerson)
+    // .map(person => person.name);
+    return (mapNewArray.name);
 
 
 };
